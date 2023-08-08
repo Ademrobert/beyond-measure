@@ -485,6 +485,7 @@ section.is-hero .hero_title-wrapper {
     position: relative;
     width: 100vw;
     overflow: hidden;
+    height: 15rem;
 }
 
 section.is-hero .hero_h1-wrapper h1 {

@@ -1,3 +1,21 @@
+// Hero h1 text height
+
+function adjustHeight() {
+    const heroTitleWrapper = document.querySelector('.hero_title-wrapper');
+    const heroH1Wrapper = document.querySelector('.hero_h1-wrapper');
+
+    const newHeight = heroH1Wrapper.clientHeight + 'px';
+    heroTitleWrapper.style.height = newHeight;
+}
+
+window.addEventListener('load', function () {
+    adjustHeight();
+});
+
+window.addEventListener('resize', function () {
+    adjustHeight();
+});
+
 // Testimonials
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -87,12 +105,12 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
     const strategyOpen = document.querySelector(".strategy-open");
-    const uxOpen = document.querySelector(".ux-design-open"); 
+    const uxOpen = document.querySelector(".ux-design-open");
     const uiOpen = document.querySelector(".ui-design-open");
     const developmentOpen = document.querySelector(".webdevelopment-open");
     const serviceContainer = document.querySelector(".services-clicked_container");
-    const serviceStrategy = document.querySelector(".services-clicked_strategy"); 
-    const serviceUx = document.querySelector(".services-clicked_ux-design"); 
+    const serviceStrategy = document.querySelector(".services-clicked_strategy");
+    const serviceUx = document.querySelector(".services-clicked_ux-design");
     const serviceUi = document.querySelector(".services-clicked_ui-design");
     const serviceDevelopment = document.querySelector(".services-clicked_webdevelopment");
     const serviceCloses = document.querySelectorAll(".services-clicked-close");
