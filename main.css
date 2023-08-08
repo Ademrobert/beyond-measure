@@ -282,8 +282,6 @@ body {
     font-family: 'PPNeueMontreal', fallback, sans-serif;
     background-color: var(--white);
     color: var(--black);
-    width: 100vw !important;
-    overflow-x: hidden !important;
 }
 
 .page-wrapper {
@@ -453,11 +451,6 @@ section.is-hero .hero_content {
     margin-top: 9.25rem;
 }
 
-section.is-hero .container-large {
-    max-width: 100vw !important;
-    overflow-x: hidden !important;
-}
-
 section.is-hero .hero_h1-wrapper {
     position: absolute;
     left: 0;
@@ -490,7 +483,8 @@ section.is-hero.scrolled .hero_img-wrapper {
 
 section.is-hero .hero_title-wrapper {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
 }
 
 section.is-hero .hero_h1-wrapper h1 {
@@ -595,6 +589,7 @@ section.is-services .services_wrapper {
     min-width: 26rem;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
 }
 
 section.is-services .services_img {
@@ -924,6 +919,11 @@ footer .footer_content {
     overflow: hidden;
 }
 
+footer .footer_content .container-large {
+    z-index: 1;
+    position: relative;
+}
+
 footer .footer_content h2 {
     color: var(--white);
     text-align: center;
@@ -943,6 +943,7 @@ footer .footer_background-img {
     position: absolute;
     left: -5rem;
     bottom: -5rem;
+    z-index: 0;
 }
 
 footer .footer_details {
@@ -1267,7 +1268,6 @@ section.is-services .service_item h3 {
     z-index: 13;
     position: relative;
     opacity: 0;
-    overflow-y: scroll;
 }
 
 .services-clicked_container .services-clicked_content {
@@ -1492,7 +1492,7 @@ section.is-error404 h2 {
     }
 
     section.is-services .services_wrapper {
-        min-width: 18rem;
+        min-width: 16rem;
     }
 
     .testimonials_content {
@@ -1546,6 +1546,11 @@ section.is-error404 h2 {
 
     .testimonial_overlay {
         display: none;
+    }
+
+    section.is-services {
+        width: 100vw;
+        overflow-x: hidden;
     }
 }
 
@@ -1712,11 +1717,19 @@ section.is-error404 h2 {
     section.is-work .work_item img {
         transform: scale(1);
     }
+
+    .services-clicked_container .services-clicked_wrapper {
+        overflow-y: scroll;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     section.is-case h2 {
         font-size: 4.2rem;
+    }
+
+    .cursor_el {
+        display: none;
     }
 }
 

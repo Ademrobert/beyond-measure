@@ -105,15 +105,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
-    const strategyOpen = document.querySelector(".strategy-open"); // Corrected class name
-    const uxOpen = document.querySelector(".ux-design-open"); // Corrected class name
+    const strategyOpen = document.querySelector(".strategy-open");
+    const uxOpen = document.querySelector(".ux-design-open"); 
     const uiOpen = document.querySelector(".ui-design-open");
     const developmentOpen = document.querySelector(".webdevelopment-open");
     const serviceContainer = document.querySelector(".services-clicked_container");
-    const serviceStrategy = document.querySelector(".services-clicked_strategy"); // Corrected class name
-    const serviceUx = document.querySelector(".services-clicked_ux-design"); // Corrected class name
+    const serviceStrategy = document.querySelector(".services-clicked_strategy"); 
+    const serviceUx = document.querySelector(".services-clicked_ux-design"); 
     const serviceUi = document.querySelector(".services-clicked_ui-design");
-    const serviceDevelopment = document.querySelector(".services-clicked_webdevelopment"); // Corrected class name
+    const serviceDevelopment = document.querySelector(".services-clicked_webdevelopment");
     const serviceCloses = document.querySelectorAll(".services-clicked-close");
     const serviceContent = document.querySelectorAll(".services-clicked_wrapper");
 
@@ -184,52 +184,4 @@ document.addEventListener("DOMContentLoaded", function () {
     serviceCloses.forEach(function (element) {
         element.addEventListener("click", closeService);
     });
-});
-
-// Stagger text animation (Animation from: Ilja van Eck)
-
-let splitText;
-function runSplit() {
-    splitText = new SplitType("[stagger-link]", {
-        types: "words, chars"
-    });
-}
-runSplit();
-
-let windowWidth = $(window).innerWidth();
-window.addEventListener("resize", function () {
-    if (windowWidth !== $(window).innerWidth()) {
-        windowWidth = $(window).innerWidth();
-        splitText.revert();
-        runSplit();
-    }
-});
-
-const staggerLinks = document.querySelectorAll("[stagger-link]");
-staggerLinks.forEach((link) => {
-    const letters = link.querySelectorAll("[stagger-link-text] .char");
-
-    const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.2,
-    };
-
-    const handleEnterViewport = (entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                gsap.to(letters, {
-                    yPercent: -100,
-                    duration: 0.5,
-                    ease: "power4.inOut",
-                    stagger: { each: 0.03, from: "start" },
-                    overwrite: true,
-                });
-                observer.unobserve(entry.target);
-            }
-        });
-    };
-
-    const observer = new IntersectionObserver(handleEnterViewport, options);
-    observer.observe(link);
 });
