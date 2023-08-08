@@ -1588,6 +1588,10 @@ section.is-error404 h2 {
         font-size: 9rem;
     }
 
+    section.is-hero .hero_title-wrapper {
+        height: 16rem;
+    }
+
     section.is-works .works_heading {
         margin-bottom: 6rem;
     }
@@ -1664,6 +1668,10 @@ section.is-error404 h2 {
 
     h1 {
         font-size: 10rem;
+    }
+
+    section.is-hero .hero_title-wrapper {
+        height: 11rem;
     }
 
     h2 {
