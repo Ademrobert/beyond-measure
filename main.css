@@ -282,8 +282,8 @@ body {
     font-family: 'PPNeueMontreal', fallback, sans-serif;
     background-color: var(--white);
     color: var(--black);
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100vw !important;
+    overflow-x: hidden !important;
 }
 
 .page-wrapper {
@@ -317,11 +317,11 @@ nav.scrolled-up {
     transform: translateY(0%);
 }
 
-nav .scroll_status {
+.scroll_status {
     position: fixed;
     height: .25rem;
     background-color: var(--orange);
-    z-index: 10;
+    z-index: 30;
 }
 
 nav .nav_content {
@@ -447,12 +447,15 @@ section.is-hero {
 section.is-hero .hero_content {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    overflow-x: hidden;
     align-self: left;
     align-items: center;
     gap: 0.625rem;
     margin-top: 9.25rem;
+}
+
+section.is-hero .container-large {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
 }
 
 section.is-hero .hero_h1-wrapper {
@@ -1264,6 +1267,7 @@ section.is-services .service_item h3 {
     z-index: 13;
     position: relative;
     opacity: 0;
+    overflow-y: scroll;
 }
 
 .services-clicked_container .services-clicked_content {
@@ -1438,6 +1442,15 @@ section.is-error404 h2 {
 
 .mobile-banner {
     display: none;
+}
+
+.logo_icon {
+    display: none;
+    width: 3.19rem;
+}
+
+.logo_text {
+    width: 9.69rem;
 }
 
 @keyframes loader-animation {
@@ -1684,6 +1697,14 @@ section.is-error404 h2 {
     .mobile-banner {
         display: block !important;
     }
+
+    section.is-works .work_item img {
+        transform: scale(1);
+    }
+        
+    section.is-work .work_item img {
+        transform: scale(1);
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1707,5 +1728,13 @@ section.is-error404 h2 {
 
     section.is-case h2 {
         font-size: 3.9rem;
+    }
+
+    .logo_icon {
+        display: block;
+    }
+
+    .logo_text {
+        display: none;
     }
 }
