@@ -508,6 +508,7 @@ section.is-hero .hero_h1-wrapper h1 {
     pointer-events: none;
     transform: scale(0) translateY(-50%);
     z-index: 9999;
+    transition: transform 0.3s .2s;
 }
 
 .cursor_cta-wrapper {
@@ -533,16 +534,17 @@ section.is-hero .hero_h1-wrapper h1 {
     list-style-type: none;
     max-width: 12ch;
     transform: translateY(100%);
-    transition: 0.3s;
+    transition: transform .2s 0s;
 }
 
 .hero_img-wrapper .img-wrapper:hover~.hero_img-cta {
     transform: scale(1);
+    transition: transform 0.3s .17s;
 }
 
 .hero_img-wrapper .img-wrapper:hover~.hero_img-cta li {
     transform: translateY(0%);
-    transition: 0.4s;
+    transition: transform .2s .5s;
 }
 
 .hero_img-wrapper .img-wrapper img {
@@ -794,20 +796,22 @@ section.is-works .works_wrapper {
     pointer-events: none;
     transform: scale(0);
     z-index: 2;
+    transition: transform 0.3s .2s;
 }
 
 .work_cta li {
     transform: translateY(100%);
-    transition: 0.3s;
+    transition: transform .2s 0s;
 }
 
 .work_cta.work_cta_visible {
     transform: scale(1);
+    transition: transform 0.3s .17s;
 }
 
 .work_cta.work_cta_visible li {
     transform: translateY(0%);
-    transition: 0.3s;
+    transition: transform .2s .5s;
 }
 
 .work_cta li {
