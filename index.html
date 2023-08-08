@@ -37,7 +37,8 @@
                 <div class="container-large">
                     <div class="nav_content">
                         <a href="index.html" class="nav_logo show-on-scroll">
-                            <img class="logo_text" src="sources/images/logo-text.png" alt="Beyond Measure logo with text">
+                            <img class="logo_text" src="sources/images/logo-text.png"
+                                alt="Beyond Measure logo with text">
                             <img class="logo_icon" src="sources/images/logo-icon.png" alt="Beyond Measure logo">
                         </a>
                         <div class="nav_wrapper show-on-scroll">
@@ -71,7 +72,7 @@
                         <div class="hero_title-wrapper show-on-scroll">
                             <div class="hero_h1-wrapper">
                                 <h1>Creating experiences with a strategy-first
-                                        approach</h1>
+                                    approach</h1>
                                 <svg width="204" height="204" viewBox="0 0 204 204" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="203.993" height="204" rx="101.997" fill="#252422" fill-opacity="0.9" />
@@ -86,7 +87,7 @@
                                         fill="#FFFCF3" />
                                 </svg>
                                 <h1>Creating experiences with a strategy-first
-                                        approach</h1>
+                                    approach</h1>
                                 <svg width="204" height="204" viewBox="0 0 204 204" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <rect width="203.993" height="204" rx="101.997" fill="#252422" fill-opacity="0.9" />
@@ -142,8 +143,7 @@
                                     designed to
                                     achieve results.</p>
                                 <div class="buttons show-on-scroll">
-                                    <a class="btn primary-btn testimonial-open"
-                                        data-replace="View testimonials">
+                                    <a class="btn primary-btn testimonial-open" data-replace="View testimonials">
                                         <span>View testimonials</span>
                                         <svg width="29" height="30" viewBox="0 0 29 30" fill="none"
                                             xmlns="http://www.w3.org/2000/svg" class="btn-svg-right">
@@ -363,7 +363,7 @@
                                 <h3><span>UX Design</span></h3>
                                 <p>Starting by understanding the goals and problems, we develop a strong strategy for
                                     your application that will ensure we achieve the business goals and provide a
-                                    user-friendly experience.</p>                                    
+                                    user-friendly experience.</p>
                             </div>
                             <div class="services-clicked_included">
                                 <div class="services-clicked_included-header">
@@ -397,7 +397,8 @@
                             <div class="services-clicked_intro show-on-scroll">
                                 <h3><span>UI Design</span></h3>
                                 <p>After we create a good UX wireframe, it still needs to feel like your brand. With
-                                    this service, we take care of that. Some very important aspects we cover are photography,
+                                    this service, we take care of that. Some very important aspects we cover are
+                                    photography,
                                     layout, font styles, and color.</p>
                             </div>
                             <div class="services-clicked_included">
@@ -434,7 +435,8 @@
                                 <h3><span>Webdevelopment</span></h3>
                                 <p>With this service, we develop your website in a responsive manner,
                                     using Webflow. We also take care of the animations. Want to know what's possible?
-                                    <a href="https://wa.me/31612764669" target="_blank">Get in touch</a>.</p>
+                                    <a href="https://wa.me/31612764669" target="_blank">Get in touch</a>.
+                                </p>
                             </div>
                             <div class="services-clicked_included">
                                 <div class="services-clicked_included-header">
@@ -499,8 +501,10 @@
                                 <a href="cases/juridify.html"></a>
                                 <div class="work_banner">
                                     <div class="img-wrapper">
-                                        <img class="desktop-banner" src="sources/images/juridify-banner.png" alt="Juridify banner">
-                                        <img class="mobile-banner" src="sources/images/juridify-mobile-banner.png" alt="Juridify mobile banner">
+                                        <img class="desktop-banner" src="sources/images/juridify-banner.png"
+                                            alt="Juridify banner">
+                                        <img class="mobile-banner" src="sources/images/juridify-mobile-banner.png"
+                                            alt="Juridify mobile banner">
                                     </div>
                                 </div>
                                 <div class="work_item-detail">
@@ -515,8 +519,10 @@
                                 <a href="cases/smpl.html"></a>
                                 <div class="work_banner">
                                     <div class="img-wrapper">
-                                        <img class="desktop-banner" src="sources/images/smpl-banner.png" alt="SMPL banner">
-                                        <img class="mobile-banner" src="sources/images/smpl-mobile-banner.png" alt="SMPL mobile banner">
+                                        <img class="desktop-banner" src="sources/images/smpl-banner-2.png"
+                                            alt="SMPL banner">
+                                        <img class="mobile-banner" src="sources/images/smpl-mobile-banner.png"
+                                            alt="SMPL mobile banner">
                                     </div>
                                 </div>
                                 <div class="work_item-detail">
@@ -614,6 +620,25 @@
 
 </html>
 
+<script>
+    // Hero h1 text height
+
+    function adjustHeight() {
+        const heroTitleWrapper = document.querySelector('.hero_title-wrapper');
+        const heroH1Wrapper = document.querySelector('.hero_h1-wrapper');
+
+        const newHeight = heroH1Wrapper.clientHeight + 'px';
+        heroTitleWrapper.style.height = newHeight;
+    }
+
+    window.addEventListener('load', function () {
+        adjustHeight();
+    });
+
+    window.addEventListener('resize', function () {
+        adjustHeight();
+    });
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://unpkg.com/split-type"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

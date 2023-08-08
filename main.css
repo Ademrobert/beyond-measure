@@ -493,12 +493,6 @@ section.is-hero .hero_h1-wrapper h1 {
     line-height: 110%;
 }
 
-[stagger-link] {
-    position: relative;
-    vertical-align: top;
-    overflow: hidden;
-}
-
 .hero_img-cta {
     position: absolute;
     background-color: var(--orange);
@@ -1195,7 +1189,7 @@ section.is-case .timeline_time li {
 section.is-case .timeline_box .timeline_row:nth-child(1) p {
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 160%;
+    line-height: 120%;
     /* 2.4rem */
     opacity: 0.8;
     color: var(--black);
@@ -1227,10 +1221,6 @@ section.is-case .timeline_p {
 section.is-services .service_item h3 {
     overflow: hidden;
     line-height: 100%;
-}
-
-[stagger-link] [stagger-link-text] {
-    text-shadow: 0px 1.1em 0px var(--black);
 }
 
 .about-illustration {
