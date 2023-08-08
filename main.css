@@ -1631,6 +1631,13 @@ section.is-error404 h2 {
     section.is-works .works_heading {
         margin-bottom: 3rem;
     }
+
+    .testimonials_wrapper {
+        margin: 8rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 630px) {
