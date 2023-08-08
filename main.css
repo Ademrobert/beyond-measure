@@ -274,7 +274,7 @@ section {
 
     to {
         opacity: auto;
-        transform: translateY(0rem);
+        transform: translateY(auto);
     }
 }
 
@@ -872,6 +872,7 @@ section.is-works .work_item-detail {
 section.is-work h2 {
     opacity: .9;
     line-height: 100%;
+    transform: translateY(1rem);
 }
 
 section.is-work h3,
@@ -1190,7 +1191,6 @@ section.is-case .timeline_box .timeline_row:nth-child(1) p {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 120%;
-    /* 2.4rem */
     opacity: 0.8;
     color: var(--black);
 }
@@ -1528,6 +1528,10 @@ section.is-error404 h2 {
         align-items: first baseline;
         gap: 1rem;
         margin-bottom: 3rem;
+    }
+
+    section.is-work h2 {
+        transform: translateY(0rem);
     }
 
     section.is-hero .hero_img-wrapper img {

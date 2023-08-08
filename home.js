@@ -35,25 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-// Hero h1 text height
-
-function adjustHeight() {
-    const heroTitleWrapper = document.querySelector('.hero_title-wrapper');
-    const heroH1Wrapper = document.querySelector('.hero_h1-wrapper');
-
-    const newHeight = heroH1Wrapper.clientHeight + 'px';
-    heroTitleWrapper.style.height = newHeight;
-}
-
-window.addEventListener('load', function () {
-    adjustHeight();
-});
-
-window.addEventListener('resize', function () {
-    adjustHeight();
-});
-
 // About illustration animation
 
 document.addEventListener("DOMContentLoaded", function () {
