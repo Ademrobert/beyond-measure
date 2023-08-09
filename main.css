@@ -484,7 +484,7 @@ section.is-hero.scrolled .hero_img-wrapper {
 section.is-hero .hero_title-wrapper {
     position: relative;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 15rem;
 }
 
