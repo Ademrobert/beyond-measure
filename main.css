@@ -282,6 +282,8 @@ body {
     font-family: 'PPNeueMontreal', fallback, sans-serif;
     background-color: var(--white);
     color: var(--black);
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .page-wrapper {
@@ -484,7 +486,6 @@ section.is-hero.scrolled .hero_img-wrapper {
 section.is-hero .hero_title-wrapper {
     position: relative;
     width: 100vw;
-    overflow-x: hidden;
     height: 15rem;
 }
 
