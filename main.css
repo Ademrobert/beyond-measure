@@ -453,6 +453,18 @@ section.is-hero .hero_h1-wrapper {
     display: flex;
     align-items: first baseline;
     gap: 1.88rem;
+    animation: moveX 30s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveX {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% + 100vw - 1.88rem));
+    }
 }
 
 section.is-hero .hero_img-wrapper {
