@@ -470,10 +470,12 @@ section.is-hero.scrolled .hero_img-wrapper {
 @keyframes moveX {
     0% {
         transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }
 
     100% {
         transform: translateX(calc(-100% + 100vw - 1.88rem));
+        -webkit-transform: translateX(calc(-100% + 100vw - 1.88rem));
     }
 }
 
