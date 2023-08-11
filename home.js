@@ -184,3 +184,22 @@ document.addEventListener("DOMContentLoaded", function () {
         element.addEventListener("click", closeService);
     });
 });
+
+// GSAP Animation
+
+document.addEventListener("DOMContentLoaded", () => {
+    let teamMarquee = document.querySelectorAll(".hero_h1-wrapper");
+  
+    gsap.fromTo(
+        teamMarquee,
+        {
+            x: "0%"
+        },
+        {
+            x: "-100%",
+            duration: 20, // Reduced the duration for better visibility
+            repeat: -1,
+            ease: "linear"
+        }
+    );
+  });
