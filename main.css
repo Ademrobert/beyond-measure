@@ -252,7 +252,7 @@ section {
 }
 
 .container-medium {
-    margin-left: 10.375rem;
+    margin-left: 10rem;
     width: 100%;
 }
 
@@ -279,7 +279,6 @@ body {
     font-family: 'PPNeueMontreal', fallback, sans-serif;
     background-color: var(--white);
     color: var(--black);
-    width: 100vw;
 }
 
 .page-wrapper {
